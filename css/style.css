@@ -1,0 +1,76 @@
+@keyframes rotate {
+    0% { 
+        transform: rotate(0deg); 
+    }
+    100% { 
+        transform: rotate(225deg); 
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes translateFromLeft {
+    0% {
+        transform: translateX(-150%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes translateFromRight {
+    0% {
+        transform: translateX(150%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.fullscreen-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-block1 {
+    position: absolute;
+    animation: rotate 2s forwards;
+}
+
+.side-block2 {
+    position: absolute;
+    animation: rotate 2s forwards;
+}
+
+.card-block1 {
+    animation: translateFromRight 1s forwards;
+}
+
+.card-block2 {
+    animation: translateFromLeft 1s forwards;
+}
+
+.cursor-default {
+    cursor: default;
+}
+
+.link {
+    color: rgb(33,37,41);
+    text-decoration: none;
+}
